@@ -4,15 +4,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <table>
-            <caption><h2>Registration Form</h2></caption>
+    <fieldset>
+        <legend align="center">
+            <fieldset>Registration Form</fieldset>
+        </legend>
+    <form  action="welcome.html">
+        <table align="center">
             <tr>
                 <td>
                     <label>Username</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Enter Username" id="username" name="username">
+                    <input type="text" required placeholder="Enter Username" id="username" name="username">
                 </td>
             </tr>
             <tr>
@@ -20,7 +23,7 @@
                     <label>Email</label>
                 </td>
                 <td>
-                    <input type="email" placeholder="Enter Email" id="email" name="email">
+                    <input type="email" required placeholder="Enter Email" id="email" name="email">
                 </td>
             </tr>
             <tr>
@@ -28,7 +31,7 @@
                     <label>Password</label>
                 </td>
                 <td>
-                    <input type="password" placeholder="Enter Password" id="password" name="password">
+                    <input type="password" required placeholder="Enter Password" id="password" name="password">
                 </td>
             </tr>
             <tr>
@@ -36,7 +39,7 @@
                     <label>Contact</label>
                 </td>
                 <td>
-                    <input type="text" maxlength="10" placeholder="Enter 10-digit mobile number" id="number" name="number">
+                    <input type="text" required maxlength="10" placeholder="Enter 10-digit mobile number" id="number" name="number">
                 </td>
             </tr>
             <tr>
@@ -44,7 +47,7 @@
                     <label>DOB</label>
                 </td>
                 <td>
-                    <input type="date" placeholder="Enter Date of Birth" id="date" name="date"> 
+                    <input type="date" required placeholder="Enter Date of Birth" id="date" name="date"> 
                 </td>
             </tr>
             <tr>
@@ -52,13 +55,67 @@
                     <label>Gender</label>
                 </td>
                 <td>
-                    <input type="radio" id="male" name="gender">
+                    <input checked required type="radio" id="male" name="gender">
                     <label for="male">Male</label>
                     <input type="radio" id="female" name="gender">
                     <label for="female">Female</label>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <label>Hobbies</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="cricket" name="cricket">
+                    <label for="cricket">Cricket</label>
+                    <input checked type="checkbox" id="hockey" name="hockey">
+                    <label for="hockey">Hockey</label>
+                    <input type="checkbox" id="football" name="football">
+                    <label for="football">Football</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Subject</label>
+                </td>
+                <td>
+                    <!-- <select multiple name="subject" id="subject"> -->
+                        <select name="subject" required id="subject">
+
+                        <option value="">Select Subject</option>
+                        <option selected value="C">C language</option>
+                        <option value="C++">C++ language</option>
+                        <option value="C#">C# language</option>
+                        <option value=".Net">.Net language</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label>
+                </td>
+                <td>
+                    <textarea required name="address" id="address" cols="21" rows="3" placeholder="Enter Address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Upload File</label>
+                </td>
+                <td>
+                    <input type="file" required id="file" name="file">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
         </table>
     </form>
+</fieldset>
 </body>
 </html>
